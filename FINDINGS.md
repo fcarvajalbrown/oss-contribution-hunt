@@ -6,13 +6,15 @@ Which open-source projects accept AI-assisted contributions under a written poli
 
 ## Policies
 
-`data/ai_policies.csv` lists 40 projects with their stance, what disclosure they require, and a link to the source. Most game engines and game projects that publish a policy restrict or ban AI-generated code (Godot, Widelands, mGBA, the Zelda and Banjo recomps). Most infrastructure, language and scientific projects allow it with a human accountable for every line, and many ask for an `Assisted-by:` trailer or a line in the PR description. Kubernetes is the exception that requires disclosure but bans the trailer.
+`data/ai_policies.csv` lists 70 projects with their stance, what disclosure they require, and a link to the source. Most game engines and game projects that publish a policy restrict or ban AI-generated code (Godot, Widelands, mGBA, Avian, the Zelda and Banjo recomps), and so does Ardour among audio projects. Most infrastructure, language and scientific projects allow it with a human accountable for every line, and many ask for an `Assisted-by:` trailer or a line in the PR description. Kubernetes is the exception that requires disclosure but bans the trailer; cpal is one of the few that does not require disclosure at all.
+
+The second round of searches covered scientific and numerical software and game and audio tooling in Python and Rust. Scientific Python projects converge on the SciPy/SymPy template: disclose the tools and which parts they wrote, no autonomous agents, no AI writing your replies to reviewers. Several (MQT, Matplotlib, silx, LLVM) close AI-assisted PRs on issues reserved for newcomers.
 
 Policies change often. Read the linked page before you contribute.
 
 ## Responsiveness
 
-`tools/pr_response_time.py` sampled the 40 most recent pull requests from outside contributors in each of 28 GitHub projects whose policy allows AI assistance, skipping PRs younger than 72 hours. The raw numbers are in `data/pr_response_2026-11-24.csv`.
+`tools/pr_response_time.py` sampled the 40 most recent pull requests from outside contributors in each of 56 GitHub projects whose policy allows or restricts (but does not ban) AI assistance, skipping PRs younger than 72 hours. The raw numbers are in `data/pr_response_2026-11-24.csv`.
 
 - First response means the first comment or review by a human other than the author. Bot accounts are excluded, including automation accounts that post as ordinary users (`nodejs-github-bot`, `ansibot`).
 - OpenSSL shows 0% merged because it lands changes by cherry-pick, not by merging the PR.
@@ -31,16 +33,16 @@ Result in `data/composite_ranking_2026-11-24.csv`. Top eight:
 
 | Rank | Project | Rank range | Answered in 24 h | Median first answer | Merged |
 |---|---|---|---|---|---|
-| 1 | Ghostty | 1-5 | 55% | 1.7 h | 62% |
-| 2 | Privacy Badger (EFF) | 1-4 | 80% | 5.3 h | 52% |
-| 3 | Neovim | 1-11 | 68% | 1.8 h | 32% |
-| 4 | systemd | 3-9 | 55% | 11.3 h | 55% |
-| 5 | Ruff | 4-9 | 60% | 11.9 h | 50% |
-| 6 | NumPy | 3-15 | 70% | 4.9 h | 28% |
-| 7 | Apache Airflow | 3-10 | 45% | 3.2 h | 40% |
-| 8 | ESLint | 4-12 | 65% | 9.9 h | 35% |
+| 1 | MQT Core (Munich Quantum Toolkit) | 1-5 | 65% | 3.9 h | 78% |
+| 2 | Astropy | 1-6 | 62% | 1.0 h | 62% |
+| 3 | statsmodels | 1-10 | 70% | 11.4 h | 80% |
+| 4 | Ghostty | 2-9 | 55% | 1.7 h | 62% |
+| 5 | Privacy Badger (EFF) | 1-8 | 80% | 5.3 h | 52% |
+| 6 | Matplotlib | 6-16 | 60% | 4.5 h | 48% |
+| 7 | Neovim | 2-27 | 68% | 1.8 h | 32% |
+| 8 | systemd | 7-17 | 55% | 11.3 h | 55% |
 
-Ghostty and Privacy Badger overlap almost completely, so the data cannot separate them. Neovim's range is wide because its merge rate is low. At the bottom, uv left 25 of 40 sampled outside PRs unanswered, and pybind11's range (4-28) is too wide to read.
+The top five overlap, so the data cannot order them reliably. Neovim's range is wide because its merge rate is low. Adding 28 projects moved every earlier project down, because min-max normalisation rescales against the whole set. At the bottom, Rapier answered 5 of 40 sampled outside PRs and Symphonia's median first answer was 309 hours; uv left 25 of 40 unanswered, and pybind11's range (12-54) is too wide to read.
 
 ## Not covered
 

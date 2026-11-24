@@ -17,9 +17,9 @@ If you use AI tools to write code and want your pull requests read, two things m
 
 ## What is here
 
-- `data/ai_policies.csv`: 40 projects, their AI contribution stance, the disclosure they ask for, and a link to the policy.
-- `data/pr_response_*.csv`: time to first human answer on outside-contributor PRs for 28 projects.
-- `data/composite_ranking_*.csv`: those 28 ranked with an OECD/JRC composite indicator and a Monte Carlo robustness check.
+- `data/ai_policies.csv`: 70 projects, their AI contribution stance, the disclosure they ask for, and a link to the policy.
+- `data/pr_response_*.csv`: time to first human answer on outside-contributor PRs for 56 projects.
+- `data/composite_ranking_*.csv`: those 56 ranked with an OECD/JRC composite indicator and a Monte Carlo robustness check.
 - `FINDINGS.md`: method, results and limits.
 - `tools/`: the two scripts that produce the numbers.
 
