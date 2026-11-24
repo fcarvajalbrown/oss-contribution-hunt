@@ -1,0 +1,41 @@
+project,repo,stance,disclosure,notes,source
+Linux kernel,(mailing list),allows,Assisted-by trailer,Only humans add Signed-off-by; submitter reviews and owns the code; patches by email not PRs,https://docs.kernel.org/process/coding-assistants.html
+LLVM,llvm/llvm-project,allows,PR description or Assisted-by trailer,Human in the loop; no AI on good first issues,https://llvm.org/docs/AIToolPolicy.html
+CPython,python/cpython,allows,Appreciated,Labels AI-needs-explanation and AI-guidelines-not-met; bot closes the second,https://devguide.python.org/getting-started/ai-tools/
+Kubernetes,kubernetes/kubernetes,allows,Required in PR description,Bans Assisted-by and co-author trailers; no large AI PRs; no AI-written commit messages or review replies,https://groups.google.com/a/kubernetes.io/g/dev/c/7Y9016gdFZw
+Django,django/django,allows,Not stated,Unverified AI output may be closed without review,https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/submitting-patches
+NumPy,numpy/numpy,allows,Required,PRs without the disclosure are rejected,https://numpy.org/devdocs/dev/ai_policy.html
+SciPy,scipy/scipy,allows,See policy,No AI-written PR descriptions,https://docs.scipy.org/doc/scipy/dev/conduct/ai_policy.html
+xarray,pydata/xarray,allows,Section in PR form,Submitter must understand and vouch for every change,https://docs.xarray.dev/en/latest/contribute/ai-policy.html
+Ghostty,ghostty-org/ghostty,allows,Required with tool name,Applies to outside contributors only,https://raw.githubusercontent.com/ghostty-org/ghostty/main/AI_POLICY.md
+Home Assistant,home-assistant/core,allows,Not stated,Unreviewed AI material closed; repeat offenders blocked,https://developers.home-assistant.io/docs/ai_policy
+Node.js,nodejs/node,allows,Assisted-by annotation,Agents may not open unsupervised PRs,https://raw.githubusercontent.com/nodejs/node/main/AGENTS.md
+ESLint,eslint/eslint,allows,Required,AI PRs only for issues marked accepted,https://eslint.org/docs/head/contribute/ai-policy
+Polars,pola-rs/polars,allows,Required with tools and extent,AI PRs only for accepted issues; human verification,https://cocalc.com/github/pola-rs/polars/blob/main/AI_POLICY.md
+uv,astral-sh/uv,allows,See policy,Non-compliant PRs closed,https://docs.astral.sh/uv/reference/contributing/
+Ruff,astral-sh/ruff,allows,See policy,Non-compliant PRs closed,https://docs.astral.sh/ruff/contributing
+OpenTelemetry,open-telemetry/opentelemetry-collector,allows,When mostly AI-generated,Human driving the contribution is responsible,https://opentelemetry.io/docs/contributing/pull-requests/
+Rucio (CERN),rucio/rucio,allows,Required for PRs and all project communication,Human code review mandatory,https://rucio.cern.ch/documentation/developer/dev_ai_policy
+pybind11,pybind/pybind11,allows,Assisted-by trailer,Read from a mirror of AI_POLICY.md,https://android.googlesource.com/platform/external/python/pybind11/+show/refs/heads/upstream-master/AI_POLICY.md
+Zephyr,zephyrproject-rtos/zephyr,allows,Assisted-by tag,Only humans add Signed-off-by,https://docs.zephyrproject.org/latest/contribute/guidelines.html
+systemd,systemd/systemd,allows,Required in commit messages and PR descriptions,AI canary in AGENTS.md since 262-rc2,https://systemd.io/CONTRIBUTING/
+Ansible,ansible/ansible,allows,Assisted-by recommended,Maintainers may reject PRs opened by AI bots,https://docs.ansible.com/projects/ansible/13/community/ai_policy.html
+EFF (Certbot; Privacy Badger),certbot/certbot; EFForg/privacybadger,allows,Required,Commit descriptions and comments must be written by the human,https://www.eff.org/deeplinks/2026/02/effs-policy-llm-assisted-contributions-our-open-source-projects
+Neovim,neovim/neovim,allows (third-party rating),Not checked,Policy text not read; rated permissive by a community list,https://codeberg.org/small-hack/open-slopware/pulls/875
+OpenSSL,openssl/openssl,allows,Assisted-by trailer,Requires the new CLA with AI clauses; tests required,https://openssl-library.org/policies/general/ai-policy/
+Apache DataFusion,apache/datafusion,allows,See guide,Author must defend the design end to end,https://datafusion.apache.org/contributor-guide
+Apache Airflow,apache/airflow,allows,Gen-AI disclosure section,Details from mailing-list threads,https://mail-archive.com/dev@airflow.apache.org/msg22833.html
+FreeCAD,FreeCAD/FreeCAD,allows with rules,See policy,Policy moved to its own document in mid-2026,https://blog.freecad.org/2026/06/29/ai-policy-update/
+Wagtail,wagtail/wagtail,allows,Disclaimer requested,Purely AI-generated contributions not accepted,https://docs.wagtail.org/en/stable/contributing/general_guidelines.html
+Fedora,(Pagure / Forgejo),allows,Assisted-by trailer when significant,Contributor fully accountable,https://docs.fedoraproject.org/bn/council/policy/ai-contribution-policy/
+Debian,(Salsa),allows,Per general resolution,Responsible-use option won the 2026 vote; check the final text,https://www.debian.org/vote/2026/vote_002
+Mesa,(freedesktop GitLab),allows,Assisted-by or Generated-by,Reviewers may reject suspected AI code,https://phoronix.com/news/mesa-two-gen-ai-policies
+Firefox,(Phabricator),allows,Not stated,Human keeps responsibility; small focused patches,https://firefox-source-docs.mozilla.org/contributing/ai-coding.html
+Bevy,bevyengine/bevy,allows,Required with context,Earlier ban dropped as unenforceable,https://bevy.org/learn/contribute/policies/ai/
+ScummVM,scummvm/scummvm,allows,Required in PR description,Extensive AI code reserved for established members; no AI co-authorship,https://github.com/scummvm/scummvm/blob/master/AI-GUIDELINES.md
+Godot,godotengine/godot,restricts,Required for the small uses allowed,Only menial assistance; no substantial AI code,https://godotengine.org/article/contribution-policy-2026/
+Gentoo,(own infrastructure),bans,,Council ban since 2024,https://wiki.gentoo.org/wiki/Project:Council/AI_policy
+NetBSD,(own infrastructure),bans,,LLM code presumed tainted,https://www.theregister.com/2024/05/18/distros_ai_code/
+QEMU,(mailing list),bans (relaxation proposed),,A 2026 patch proposes Assisted-by; merge not confirmed,https://patchew.org/QEMU/20260529094619.1034458-1-pbonzini@redhat.com/
+Widelands,widelands/widelands,bans (draft),,Resolution drafted in 2026,https://www.gamingonlinux.com/2026/02/widelands-the-open-source-settlers-like-devs-plan-to-ban-all-ai-generated-contributions
+mGBA,mgba-emu/mgba,bans,,PRs with AI code closed,https://heldgames.com/guides/emulator-projects-ban-ai-code
