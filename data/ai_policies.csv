@@ -39,3 +39,33 @@ NetBSD,(own infrastructure),bans,,LLM code presumed tainted,https://www.theregis
 QEMU,(mailing list),bans (relaxation proposed),,A 2026 patch proposes Assisted-by; merge not confirmed,https://patchew.org/QEMU/20260529094619.1034458-1-pbonzini@redhat.com/
 Widelands,widelands/widelands,bans (draft),,Resolution drafted in 2026,https://www.gamingonlinux.com/2026/02/widelands-the-open-source-settlers-like-devs-plan-to-ban-all-ai-generated-contributions
 mGBA,mgba-emu/mgba,bans,,PRs with AI code closed,https://heldgames.com/guides/emulator-projects-ban-ai-code
+FiPy (NIST),usnistgov/fipy,allows,"Required: tools used, how, which parts",Contributor reads and understands all LLM output; human answers review; extractive contributions not welcome,https://pages.nist.gov/fipy/en/latest/AI_POLICY.html
+PyVista,pyvista/pyvista,allows,Required in PR description,Follows the Python devguide but makes disclosure mandatory,https://docs.pyvista.org/contributing
+SunPy,sunpy/sunpy,allows,Required checklist in every PR,PRs without the completed checklist are set to draft and not reviewed,https://docs.sunpy.org/en/latest/dev_guide/contents/ai_usage.html
+Numba,numba/numba,allows,Assisted-by trailer or PR note,Derived from LLVM; human in the loop,https://numba.readthedocs.io/en/stable/reference/ai_tools_policy.html
+statsmodels,statsmodels/statsmodels,allows,Not found by search,Must be tested by a human against a trusted reference; no AI-written messages,https://www.statsmodels.org/devel/dev/ai-policy.html
+pandas,pandas-dev/pandas,allows,AGENTS.md asks for harness and model,Do not use AI to speak for you in issues or reviews; bans after 2 violations,https://pandas.pydata.org/docs/dev/development/contributing.html
+Astropy,astropy/astropy,allows,Not found by search,Human ownership; reviewer replies must be your own,https://github.com/astropy/astropy-project/blob/main/policies/ai-policy.md
+scverse (scanpy; anndata),scverse/scanpy,allows,Not found by search,A human must review AI code before submitting; warnings for violations,https://scverse.org/about/ai_policy/
+pyFAI,silx-kit/pyFAI,allows,"Required: tools and content",Based on SciPy/SymPy; no autonomous agents,https://pyfai.readthedocs.io/en/latest/AI_policy.html
+earthaccess,earthaccess-dev/earthaccess,allows,Checkbox on every PR,Adapted from SciPy/SymPy; no autonomous agents,https://earthaccess.readthedocs.io/en/latest/contributor/ai-policy/
+CodeCarbon,mlco2/codecarbon,allows,Not found by search,Submitter is sole responsible author; must test locally; reuse existing helpers,https://docs.codecarbon.io/latest/how-to/ai_policy/
+Kornia,kornia/kornia,allows,AI-generated / AI-assisted / No AI labels,Rejects submitters acting as a proxy; reuse existing utilities,https://raw.githubusercontent.com/kornia/kornia-rs/main/AI_POLICY.md
+scikit-survival,sebp/scikit-survival,allows,PR description,No autonomous agents; no AI talking to contributors for you,https://scikit-survival.readthedocs.io/en/stable/ai_policy.html
+MQT (Munich Quantum Toolkit),munich-quantum-toolkit/core,allows,PR note or Assisted-by trailer,No AI on good first issues; agents only within human-authorised scope,https://mqt.readthedocs.io/en/latest/ai_usage.html
+PennyLane,PennyLaneAI/pennylane,allows,Labelling to aid review,Follows LLVM; no agents acting without human sign-off,https://docs.pennylane.ai/en/stable/development/guide/contributing.html
+Aviary (NASA),OpenMDAO/Aviary,restricts,Commit messages and PR descriptions,No AI numerical data; no AI unit tests or docs,https://openmdao.github.io/Aviary/developer_guide/ai_policy.html
+pvlib,pvlib/pvlib-python,allows,PR template checkbox,Attest AI material was vetted and is licence-compatible,https://raw.githubusercontent.com/pvlib/pvlib-python/refs/heads/main/.github/PULL_REQUEST_TEMPLATE.md
+napari,napari/napari,allows,Quote LLM text in discussions,Contributor verifies accuracy,https://github.com/napari/napari/blob/main/CONTRIBUTING.md
+JAX,jax-ml/jax,allows,Not found by search,Must abide by the CLA; no autonomous agents; no AI speaking for you,https://docs.jax.dev/en/latest/contributing.html
+BeeWare,beeware/toga,allows,Declare AI tools used,Neither encourages nor prohibits; maintainers may close without critique,https://beeware.org/contributing/guide/policies/ai-policy/
+Matplotlib,matplotlib/matplotlib,restricts,Not found by search,AI PRs closed on good first issues; no agents interacting directly,https://matplotlib.org/devdocs/devel/contribute.html
+Rapier (Dimforge),dimforge/rapier,allows,Not found by search,Accepts AI code if a human verifies it and it has non-regression tests,https://github.com/dimforge/rapier
+cpal,RustAudio/cpal,allows,Generally not required,Same quality bar as hand-written code; label untested platforms as unverified,https://raw.githubusercontent.com/RustAudio/cpal/master/CONTRIBUTING.md
+Symphonia,pdeljanov/Symphonia,restricts,Required in all cases,Whole-feature AI implementations discouraged; no AI comments; real test vectors,https://raw.githubusercontent.com/pdeljanov/Symphonia/main/CONTRIBUTING.md
+Linebender (Vello),linebender/vello,restricts,Required,No end-to-end LLM PRs and no AI PR descriptions,https://linebender.org/wiki/llm-policy/
+wgpu (gfx-rs),gfx-rs/wgpu,allows,See CONTRIBUTING,Contributor must understand and vouch for every change,https://raw.githubusercontent.com/gfx-rs/wgpu/HEAD/AGENTS.md
+Processing (p5.js),processing/p5.js,allows,Name AI tools in PR,No PRs entirely generated by AI; ask on Discord first,https://raw.githubusercontent.com/processing/p5.js/main/AI_USAGE_POLICY.md
+Avian,avianphysics/avian,bans,Always,Bans LLM-generated commits and communication,https://raw.githubusercontent.com/avianphysics/avian/main/AI_POLICY.md
+Ardour,(Ardour git),bans,n/a,No LLM-generated code accepted,https://ardour.org/development
+scikit-image,scikit-image/scikit-image,bans,n/a,0.22 docs ask contributors not to use AI tools,https://scikit-image.org/docs/0.22.x/development/contribute.html
